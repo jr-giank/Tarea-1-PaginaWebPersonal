@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    color: #272026;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    background-color: #fefefd;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section[id]{
+    scroll-margin-top: 70px;
+}
+
+/*------------------------------------------MENU------------------------------------------*/
+header{
+    display: flex;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    width: 100vw;
+    margin: auto;
+    font-weight: 400;
+    font-size: large;
+    position: fixed;
+}
+
+header nav img{
+    width: 70px;
+    height: 50px;
+    margin: 12px 0 0 60px;
+}
+
+header nav label #menu-icon{
+    font-size: 30px;
+}
+
+header nav #check,
+header nav label #menu-icon{
+    display: none;
+}
+
+header nav ul{
+    display: flex;
+    line-height: 70px;
+    margin-right: 4%;
+}
+
+header nav li{
+    margin: 0 50px 0 0;
+}
+
+/*------------------------------------------ME------------------------------------------*/
+#info{
+    width: 100%;
+    display: flex;
+    margin: 70px auto auto auto;
+    background-color: #f5f3f4;
+    padding: 30px 0 30px 0;
+    border-bottom: 4px solid #fff;
+}
+
+#info #photo{
+    margin: auto 0 auto auto;
+    background-color: #f5f3f4;
+}
+
+#info #photo img{
+    object-fit: cover;
+    width: 300px;
+    border-radius: 50%;
+}
+
+#info #me{
+    margin: 70px auto auto 50px;
+    width: 500px;
+    text-align: justify;
+    background-color: #f5f3f4;
+}
+
+#info #me h3{
+    font-size: 50px;
+    margin-bottom: 12px;
+    background-color: #f5f3f4;
+}
+
+#info #me p{
+    font-size: 18px;
+    background-color: #f5f3f4;
+}
+
+
+/*------------------------------------------HOBBIES------------------------------------------*/
+#hobbies{
+    background-color: #f5f3f4;
+    height: 390px;
+    width: 88vw; 
+    display: flex;
+    margin: auto auto auto auto;
+    justify-content: space-around;
+    border-radius: 2px;
+    border-bottom: 4px solid #fff;
+    padding: 25px 0 10px 0;
+}
+
+#hobbies .hobbie{
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    height: 345px;
+    width: 28%;
+    background-color: #f5f3f4;
+    border: 3px solid #fff;
+    padding: 8px;
+}
+
+#hobbies .hobbie img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+#hobbies .hobbie .description h4,
+#hobbies .hobbie .description p{
+    background-color: #f5f3f4;
+    padding-top: 6px;
+}
+
+#hobbies .hobbie .description p{
+    text-align: justify;
+}
+
+/*------------------------------------------VIDEO------------------------------------------*/
+#video{
+    background-color: #f5f3f4;
+    justify-content: center;
+    display: flex;
+}
+
+#video iframe{
+    margin: 10px auto 10px auto;
+    border: 4px solid #fff;
+    border-radius: 8px;
+    width: 560px;
+    height: 315px;
+}
+
+/*------------------------------------------FOOTER------------------------------------------*/
+footer{
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f3f4;
+    text-align: center;
+    margin-top: 5px;
+}
+
+footer span,
+footer span strong{
+    background-color: #f5f5f5;
+}
+
+footer #redes{
+    font-size: 30px;
+    margin: 15px auto 0 auto;
+    background-color: #f5f3f4;
+}
+
+footer #copyright{
+    font-size: 20px;
+    margin: 10px auto 0 auto;
+    background-color: #f5f3f4;
+}
+
+footer #copyright span{
+    background-color: #f5f3f4;
+}
+
+footer #redes a{
+    background-color: #f5f3f4;
+}
+
+#logo-twitter{
+    color: #00acee ;
+    background-color: #f5f3f4;
+}
+
+#logo-linkedin{
+    color: #0e76a8;
+    background-color: #f5f3f4;
+}
+
+#logo-github{
+    color: #171515;
+    background-color: #f5f3f4;
+}
+
+/*-----------------------------RESPONSIVE DESIGN--------------------------*/
+@media only screen and (max-width:1280px){
+
+    header nav ul{
+        display: flex;
+        line-height: 70px;
+        margin-right: 5%;
+    }
+
+    #hobbies .hobbie{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width:1150px){
+    #hobbies{
+        width: 100%; 
+    }
+}
+
+@media only screen and (max-width:1040px){
+
+    #hobbies .hobbie{
+        width: 230px;
+    }
+}
+
+@media only screen and (max-width:870px){
+    #info #me{
+        margin: 30px auto auto 30px;
+        width: 350px;
+    }
+
+    #info #me h3{
+        font-size: 40px;
+    }
+
+    #info #photo img{
+        width: 200px;
+    }
+
+    #hobbies{
+        flex-direction: column;
+        height: auto;
+    }
+
+    #hobbies .hobbie{
+        width: 330px;
+        margin: 20px auto 0 auto;
+    }
+
+    #hobbies .hobbie:last-child{
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width:700px){
+    
+    header nav img{
+        margin: 10px 0 0 20px;
+    }
+
+    header nav ul{
+        margin-right: 0;
+    }
+
+    #video iframe{
+        width: 460px;
+        height: 215px;
+    }    
+}
+
+/*------------------------------------------MOBILE------------------------------------------*/
+@media only screen and (max-width:576px){
+    /*----------------------------MENU----------------------------*/
+    header nav{
+        top: 0;
+    }
+    
+    header nav img{
+        margin-left: 10px;
+    }
+    
+    header nav .checkbtn{
+        display: block;
+    }
+
+    header nav label #menu-icon{
+        display: flex;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    header nav ul{
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        right: 0;
+        width: 100%;
+        height: 36vh;
+        margin-right: 0;
+        line-height: 30px;
+    }
+
+    header nav ul li{
+        padding: 2rem 0 0 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    header nav ul li a:last-child{
+        margin-bottom: 5%;
+    }
+
+    header nav #check:checked ~ ul{
+        left: 0;
+    }
+
+    /*------------------------------------------ME------------------------------------------*/
+    #info{
+        padding-top: 0px;
+    }
+
+    #info #photo img{
+        width: 130px;
+    }
+
+    #info #me{
+        width: 50%;
+        margin-top: 16px;
+        margin-left: 30px;
+    }
+
+    #info #me h3{
+        font-size: 30px;
+    }
+
+    #info #me p{
+        font-size: 16px;
+    }
+
+    /*------------------------------------------HOBBIES------------------------------------------*/
+    #hobbies{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        border: none;
+    }
+
+    #hobbies .hobbie{
+        width: 60%;
+        margin: 8px auto auto auto;
+    }
+
+    #hobbies .hobbie:last-child{
+        margin-bottom: 10px;
+    }
+
+    #hobbies .hobbie img{
+        width: 100%;
+    } 
+    
+    /*------------------------------------------VIDEO------------------------------------------*/
+    #video{
+        background-color: #f5f3f4;
+        justify-content: center;
+        display: flex;
+    }
+    
+    #video iframe{
+        width: 340px;
+        height: 215px;
+    }
+}
